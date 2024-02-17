@@ -1,0 +1,39 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Estilos para el texto y el contador */
+.text-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#countdown1, #countdown2 {
+  font-size: 2em;
+}
+
+/* Estilos específicos de Materialize para el modo oscuro */
+body.grey.darken-4.white-text {
+  background-color: #212121 !important;
+  color: #fff !important;
+}
+
+/* Ocultar elementos en diferentes tamaños de pantalla */
+@media only screen and (max-width: 600px) {
+  /* Ocultar en dispositivos pequeños (móviles) */
+  .hide-on-small-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* Ocultar en dispositivos medianos y pequeños (tablets y móviles) */
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
