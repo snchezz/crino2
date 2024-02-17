@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="grey darken-4 white-text">
+  <div class="container">
+    <!-- Modo móvil -->
+    <div class="row hide-on-med-and-up">
+      <div class="col s12">
+        <div class="text-container">
+          <p>Fútbol</p>
+          <input type="number" id="time1" placeholder="Tiempo en minutos" value="5">
+          <div id="countdown1" class="countdown">00:00</div>
+          <div class="controls">
+            <button id="stop1" class="waves-effect waves-light btn red darken-3">Parar</button>
+            <button id="restart1" class="waves-effect waves-light btn blue darken-3">Reiniciar</button>
+          </div>
+        </div>
+        <hr>
+        <div class="text-container">
+          <p>Lápices</p>
+          <input type="number" id="time2" placeholder="Tiempo en minutos" value="10">
+          <div id="countdown2" class="countdown">00:00</div>
+          <div class="controls">
+            <button id="stop2" class="waves-effect waves-light btn red darken-3">Parar</button>
+            <button id="restart2" class="waves-effect waves-light btn blue darken-3">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modo tablet y desktop -->
+    <div class="row hide-on-small-only">
+      <div class="col s6">
+        <div class="text-container">
+          <p>Fútbol</p>
+          <input type="number" id="time1" placeholder="Tiempo en minutos" value="5">
+          <div id="countdown1" class="countdown">00:00</div>
+          <div class="controls">
+            <button id="stop1" class="waves-effect waves-light btn red darken-3">Parar</button>
+            <button id="restart1" class="waves-effect waves-light btn blue darken-3">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="text-container">
+          <p>Lápices</p>
+          <input type="number" id="time2" placeholder="Tiempo en minutos" value="10">
+          <div id="countdown2" class="countdown">00:00</div>
+          <div class="controls">
+            <button id="stop2" class="waves-effect waves-light btn red darken-3">Parar</button>
+            <button id="restart2" class="waves-effect waves-light btn blue darken-3">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
